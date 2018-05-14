@@ -1,0 +1,22 @@
+{
+	"$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
+	"description": "Schema for an Application node",
+	"self": {
+		"vendor": "com.snowplowanalytics.graph",
+		"name": "application_node",
+		"format": "jsonschema",
+		"version": "1-0-0"
+	},
+
+	"type": "object",
+	"properties": {
+		"appId": {
+			"type": "string"
+		},
+		"platform": {
+			"type": "string"
+		}
+	},
+	"required": ["appId"],
+	"additionalProperties": false
+}
