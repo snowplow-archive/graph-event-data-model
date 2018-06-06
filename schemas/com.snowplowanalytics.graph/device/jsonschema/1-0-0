@@ -1,0 +1,64 @@
+{
+	"$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
+	"description": "Schema for a Device node",
+	"self": {
+		"vendor": "com.snowplowanalytics.graph",
+		"name": "device",
+		"format": "jsonschema",
+		"version": "1-0-0"
+	},
+
+	"type": "object",
+	"properties": {
+		"domainUserid": {
+      "description": "Device ID set by Snowplow using 1st party cookie.",
+			"type": "string"
+		},
+    "networkUserid": {
+      "description": "Device ID set by Snowplow using 3rd party cookie.",
+			"type": "string"
+		},
+    "refrDomainUserid": {
+      "description": "The Snowplow domain_userid of the referring website.",
+			"type": "string"
+		},
+    "useragent": {
+      "description": "Raw useragent.",
+			"type": "string"
+		},
+    "dvceType": {
+      "description": "Type of device.",
+			"type": "string"
+		},
+    "dvceIsmobile": {
+      "description": "Is the device mobile?",
+			"type": "boolean"
+		},
+    "dvceScreenheight": {
+      "description": "Screen height in pixels.",
+			"type": "number"
+		},
+    "dvceScreenwidth": {
+      "description": "Screen width in pixels.",
+			"type": "number"
+		},
+		"osManufacturer": {
+      "description": "Company responsible for OS.",
+			"type": "string"
+		},
+    "osFamily": {
+      "description": "Operating system family.",
+			"type": "string"
+		},
+    "osName": {
+      "description": "Name of operating system.",
+			"type": "string"
+		},
+    "osTimezone": {
+      "description": "Client operating system timezone.",
+      "type": "string"
+    }
+	},
+	"required": ["useragent"],
+	"additionalProperties": false
+}
