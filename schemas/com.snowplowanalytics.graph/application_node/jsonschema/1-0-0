@@ -11,10 +11,13 @@
 	"type": "object",
 	"properties": {
 		"appId": {
+      "description": "The application ID is used to distinguish different applications that are being tracked by the same Snowplow stack.",
 			"type": "string"
 		},
 		"platform": {
-			"type": "string"
+      "description": "The platform ID is used to distinguish the same app running on different platforms.",
+			"type": "string",
+      "enum": ["web", "mob", "pc", "srv", "app", "tv", "cnsl", "iot"]
 		}
 	},
 	"required": ["appId"],
