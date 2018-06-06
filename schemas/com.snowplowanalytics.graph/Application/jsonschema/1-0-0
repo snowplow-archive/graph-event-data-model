@@ -3,7 +3,7 @@
 	"description": "Schema for an Application node",
 	"self": {
 		"vendor": "com.snowplowanalytics.graph",
-		"name": "application_node",
+		"name": "Application",
 		"format": "jsonschema",
 		"version": "1-0-0"
 	},
