@@ -1,25 +1,25 @@
 {
-	"$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
-	"description": "Schema for an Application node",
-	"self": {
-		"vendor": "com.snowplowanalytics.graph",
-		"name": "application",
-		"format": "jsonschema",
-		"version": "1-0-0"
-	},
+  "$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
+  "description": "Schema for an Application node",
+  "self": {
+    "vendor": "com.snowplowanalytics.graph",
+    "name": "application",
+    "format": "jsonschema",
+    "version": "1-0-0"
+  },
 
-	"type": "object",
-	"properties": {
-		"appId": {
+  "type": "object",
+  "properties": {
+    "appId": {
       "description": "The application ID is used to distinguish different applications that are being tracked by the same Snowplow stack.",
-			"type": "string"
-		},
-		"platform": {
+      "type": "string"
+    },
+    "platform": {
       "description": "The platform ID is used to distinguish the same app running on different platforms.",
-			"type": "string",
+      "type": "string",
       "enum": ["web", "mob", "pc", "srv", "app", "tv", "cnsl", "iot"]
-		}
-	},
-	"required": ["appId"],
-	"additionalProperties": false
+    }
+  },
+  "required": ["appId"],
+  "additionalProperties": false
 }

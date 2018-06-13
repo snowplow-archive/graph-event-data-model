@@ -1,69 +1,69 @@
 {
-	"$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
-	"description": "Schema for a Device node",
-	"self": {
-		"vendor": "com.snowplowanalytics.graph",
-		"name": "device",
-		"format": "jsonschema",
-		"version": "1-0-0"
-	},
+  "$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
+  "description": "Schema for a Device node",
+  "self": {
+    "vendor": "com.snowplowanalytics.graph",
+    "name": "device",
+    "format": "jsonschema",
+    "version": "1-0-0"
+  },
 
-	"type": "object",
-	"properties": {
-		"domainUserid": {
+  "type": "object",
+  "properties": {
+    "domainUserid": {
       "description": "Device ID set by Snowplow using 1st party cookie.",
-			"type": "string"
-		},
+      "type": "string"
+    },
     "networkUserid": {
       "description": "Device ID set by Snowplow using 3rd party cookie.",
-			"type": "string"
-		},
+      "type": "string"
+    },
     "refrDomainUserid": {
       "description": "The Snowplow domain_userid of the referring website.",
-			"type": "string"
-		},
-    "refrDvceTstamp	": {
+      "type": "string"
+    },
+    "refrDvceTstamp  ": {
       "description": "The time of attaching the domain_userid to the inbound link.",
-			"type": "string",
+      "type": "string",
       "format": "date-time"
-		},
+    },
     "useragent": {
       "description": "Raw useragent.",
-			"type": "string"
-		},
+      "type": "string"
+    },
     "dvceType": {
       "description": "Type of device.",
-			"type": "string"
-		},
+      "type": "string"
+    },
     "dvceIsmobile": {
       "description": "Is the device mobile?",
-			"type": "boolean"
-		},
+      "type": "boolean"
+    },
     "dvceScreenheight": {
       "description": "Screen height in pixels.",
-			"type": "number"
-		},
+      "type": "number"
+    },
     "dvceScreenwidth": {
       "description": "Screen width in pixels.",
-			"type": "number"
-		},
-		"osManufacturer": {
+      "type": "number"
+    },
+    "osManufacturer": {
       "description": "Company responsible for OS.",
-			"type": "string"
-		},
+      "type": "string"
+    },
     "osFamily": {
       "description": "Operating system family.",
-			"type": "string"
-		},
+      "type": "string"
+    },
     "osName": {
       "description": "Name of operating system.",
-			"type": "string"
-		},
+      "type": "string"
+    },
     "osTimezone": {
       "description": "Client operating system timezone.",
       "type": "string"
     }
-	},
-	"required": ["useragent"],
-	"additionalProperties": false
+  },
+  "required": ["useragent"],
+  "additionalProperties": false
 }

@@ -1,23 +1,23 @@
 {
-	"$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
-	"description": "Schema for a Session node",
-	"self": {
-		"vendor": "com.snowplowanalytics.graph",
-		"name": "session",
-		"format": "jsonschema",
-		"version": "1-0-0"
-	},
+  "$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
+  "description": "Schema for a Session node",
+  "self": {
+    "vendor": "com.snowplowanalytics.graph",
+    "name": "session",
+    "format": "jsonschema",
+    "version": "1-0-0"
+  },
 
-	"type": "object",
-	"properties": {
-		"domainSessionid": {
+  "type": "object",
+  "properties": {
+    "domainSessionid": {
       "description": "A visit / session identifier.",
-			"type": "string"
-		},
-		"domainSessionidx": {
+      "type": "string"
+    },
+    "domainSessionidx": {
       "description": "A visit / session index.",
-			"type": "number"
-		}
-	},
-	"additionalProperties": false
+      "type": "number"
+    }
+  },
+  "additionalProperties": false
 }

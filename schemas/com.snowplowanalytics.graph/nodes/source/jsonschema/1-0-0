@@ -1,83 +1,83 @@
 {
-	"$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
-	"description": "Schema for a Source node",
-	"self": {
-		"vendor": "com.snowplowanalytics.graph",
-		"name": "source",
-		"format": "jsonschema",
-		"version": "1-0-0"
-	},
+  "$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
+  "description": "Schema for a Source node",
+  "self": {
+    "vendor": "com.snowplowanalytics.graph",
+    "name": "source",
+    "format": "jsonschema",
+    "version": "1-0-0"
+  },
 
-	"type": "object",
-	"properties": {
-		"mktMedium": {
+  "type": "object",
+  "properties": {
+    "mktMedium": {
       "description": "Type of traffic source.",
-			"type": "string"
-		},
+      "type": "string"
+    },
     "mktSource": {
       "description": "The company / website where the traffic came from.",
-			"type": "string"
-		},
+      "type": "string"
+    },
     "mktCampaign": {
       "description": "The campaign ID.",
-			"type": "string"
-		},
+      "type": "string"
+    },
     "mktTerm": {
       "description": "Any keywords associated with the referrer.",
-			"type": "string"
-		},
+      "type": "string"
+    },
     "mktContent": {
       "description": "The content of the ad. (Or an ID so that it can be looked up.)",
-			"type": "string"
-		},
+      "type": "string"
+    },
     "mktClickid": {
       "description": "The click ID.",
-			"type": "string"
-		},
+      "type": "string"
+    },
     "mktNetwork": {
       "description": "The ad network to which the click ID belongs.",
-			"type": "string"
-		},
+      "type": "string"
+    },
     "pageReferrer": {
       "description": "URL of the referrer.",
-			"type": "string"
-		},
+      "type": "string"
+    },
     "refrUrlscheme": {
       "description": "Referer scheme.",
-			"type": "string"
-		},
+      "type": "string"
+    },
     "refrUrlhost": {
       "description": "Referer host.",
-			"type": "string"
-		},
+      "type": "string"
+    },
     "refrUrlport": {
       "description": "Referer port.",
-			"type": "number"
-		},
+      "type": "number"
+    },
     "refrUrlpath": {
       "description": "Referer page path.",
-			"type": "string"
-		},
+      "type": "string"
+    },
     "refrUrlquery": {
       "description": "Referer URL querystring.",
-			"type": "string"
-		},
+      "type": "string"
+    },
     "refrUrlfragment": {
       "description": "Referer URL fragment.",
-			"type": "string"
-		},
+      "type": "string"
+    },
     "refrMedium": {
       "description": "Type of referer, eg search / internal / etc.",
-			"type": "string"
-		},
+      "type": "string"
+    },
     "refrSource": {
       "description": "Name of referer if recognised.",
-			"type": "string"
-		},
+      "type": "string"
+    },
     "refrTerm": {
       "description": "Keywords if source is a search engine.",
-			"type": "string"
-		}
-	},
-	"additionalProperties": false
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
 }
