@@ -22,6 +22,11 @@
       "description": "The Snowplow domain_userid of the referring website.",
 			"type": "string"
 		},
+    "refrDvceTstamp	": {
+      "description": "The time of attaching the domain_userid to the inbound link.",
+			"type": "string",
+      "format": "date-time"
+		},
     "useragent": {
       "description": "Raw useragent.",
 			"type": "string"
