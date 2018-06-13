@@ -1,0 +1,94 @@
+{
+	"$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
+	"description": "Schema for an Event node",
+	"self": {
+		"vendor": "com.snowplowanalytics.graph",
+		"name": "event",
+		"format": "jsonschema",
+		"version": "1-0-0"
+	},
+
+	"type": "object",
+	"properties": {
+		"eventId": {
+      "description": "A UUID for each event.",
+			"type": "string"
+		},
+    "event": {
+      "description": "The type of event recorded.",
+			"type": "string"
+		},
+		"eventName": {
+      "description": "Event name.",
+			"type": "string"
+		},
+    "eventVendor": {
+      "description": "Who defined the event?",
+			"type": "string"
+		},
+    "eventFormat": {
+      "description": "Format for event.",
+			"type": "string"
+		},
+    "eventVersion": {
+      "description": "Version of event schema.",
+			"type": "string"
+		},
+    "eventFingerprint": {
+      "description": "Hash of client-set event fields.",
+			"type": "string"
+		},
+    "vTracker": {
+      "description": "Tracker version.",
+			"type": "string"
+		},
+    "vCollector": {
+      "description": "Collector version.",
+			"type": "string"
+		},
+    "vEtl": {
+      "description": "ETL version.",
+			"type": "string"
+		},
+    "nameTracker": {
+      "description": "Tracker namespace.",
+			"type": "string"
+		},
+    "etlTags": {
+      "description": "JSON of tags for this ETL run.",
+			"type": "array"
+		},
+    "dvceCreatedTstamp": {
+      "description": "Timestamp event was recorded on the client device.",
+			"type": "string",
+      "format": "date-time"
+		},
+    "dvceSentTstamp": {
+      "description": "Timestamp event was sent by the client device.",
+			"type": "string",
+      "format": "date-time"
+		},
+    "collectorTstamp": {
+      "description": "Timestamp for the event recorded by the collector.",
+			"type": "string",
+      "format": "date-time"
+		},
+    "etlTstamp": {
+      "description": "Timestamp event began ETL.",
+			"type": "string",
+      "format": "date-time"
+		},
+    "derivedTstamp": {
+      "description": "Timestamp making allowance for inaccurate device clock.",
+			"type": "string",
+      "format": "date-time"
+		},
+    "trueTstamp": {
+      "description": "User-set true timestamp for the event.",
+			"type": "string",
+      "format": "date-time"
+		}
+	},
+	"required": ["eventId", "event", "vTracker", "vCollector", "vEtl", "collectorTstamp"],
+	"additionalProperties": false
+}
