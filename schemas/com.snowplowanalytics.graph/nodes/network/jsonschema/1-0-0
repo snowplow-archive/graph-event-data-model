@@ -1,0 +1,67 @@
+{
+	"$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
+	"description": "Schema for a Network node",
+	"self": {
+		"vendor": "com.snowplowanalytics.graph",
+		"name": "network",
+		"format": "jsonschema",
+		"version": "1-0-0"
+	},
+
+	"type": "object",
+	"properties": {
+		"userIpaddress": {
+      "description": "User IP address.",
+			"type": "string"
+		},
+    "ipDomain": {
+      "description": "Second level domain name associated with the visitor's IP address.",
+			"type": "string"
+		},
+    "ipIsp": {
+      "description": "Visitor's ISP.",
+			"type": "string"
+		},
+    "ipNetspeed": {
+      "description": "Visitor's connection type.",
+			"type": "string"
+		},
+    "ipOrganization": {
+      "description": "Organization associated with the visitor's IP address - defaults to ISP name if none is found.",
+			"type": "string"
+		},
+    "geoCity": {
+      "description": "City the visitor is in.",
+			"type": "string"
+		},
+    "geoCountry": {
+      "description": "ISO 3166-1 code for the country the visitor is located in.",
+			"type": "string"
+		},
+    "geoLatitude": {
+      "description": "Visitor location latitude.",
+			"type": "string"
+		},
+    "geoLongitude": {
+      "description": "Visitor location longitude.",
+			"type": "string"
+		},
+    "geoRegion": {
+      "description": "ISO-3166-2 code for country region the visitor is in.",
+			"type": "string"
+		},
+    "geoRegionName": {
+      "description": "Visitor region name.",
+			"type": "string"
+		},
+    "geoTimezone": {
+      "description": "Visitor timezone name.",
+			"type": "string"
+		},
+    "geoZipcode": {
+      "description": "Postcode the visitor is in.",
+			"type": "string"
+		}
+	},
+	"additionalProperties": false
+}
