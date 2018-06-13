@@ -1,0 +1,60 @@
+{
+  "$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
+  "description": "Schema for a Page node",
+  "self": {
+    "vendor": "com.snowplowanalytics.graph",
+    "name": "page",
+    "format": "jsonschema",
+    "version": "1-0-0"
+  },
+
+  "type": "object",
+  "properties": {
+    "pageTitle": {
+      "description": "Web page title.",
+      "type": "string"
+    },
+    "pageUrl": {
+      "description": "The page URL.",
+      "type": "string"
+    },
+    "pageUrlscheme": {
+      "description": "Scheme aka protocol.",
+      "type": "string"
+    },
+    "pageUrlhost": {
+      "description": "Host aka domain.",
+      "type": "string"
+    },
+    "pageUrlpath": {
+      "description": "Path to page.",
+      "type": "string"
+    },
+    "pageUrlport": {
+      "description": "Port if specified, 80 if not.",
+      "type": "number"
+    },
+    "pageUrlquery": {
+      "description": "Querystring.",
+      "type": "string"
+    },
+    "pageUrlfragment": {
+      "description": "Fragment aka anchor.",
+      "type": "string"
+    },
+    "docCharset": {
+      "description": "The page’s character encoding.",
+      "type": "string"
+    },
+    "docHeight": {
+      "description": "The page's height in pixels.",
+      "type": "number"
+    },
+    "docWidth": {
+      "description": "The page's width in pixels.",
+      "type": "number"
+    }
+  },
+  "required": ["pageUrl", "pageUrlscheme", "pageUrlhost"],
+  "additionalProperties": false
+}
