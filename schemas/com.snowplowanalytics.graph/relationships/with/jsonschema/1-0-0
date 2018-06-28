@@ -16,27 +16,27 @@
         "startNode": {
           "description": "The start node for the relationship.",
           "oneOf": [
-            "$ref": "http://iglucentral.com/schemas/com.snowplowanalytics.graph/application/jsonschema/1-0-0#",
-            "$ref": "http://iglucentral.com/schemas/com.snowplowanalytics.graph/browser/jsonschema/1-0-0#",
-            "$ref": "http://iglucentral.com/schemas/com.snowplowanalytics.graph/device/jsonschema/1-0-0#",
-            "$ref": "http://iglucentral.com/schemas/com.snowplowanalytics.graph/network/jsonschema/1-0-0#",
-            "$ref": "http://iglucentral.com/schemas/com.snowplowanalytics.graph/page/jsonschema/1-0-0#",
-            "$ref": "http://iglucentral.com/schemas/com.snowplowanalytics.graph/session/jsonschema/1-0-0#",
-            "$ref": "http://iglucentral.com/schemas/com.snowplowanalytics.graph/source/jsonschema/1-0-0#",
-            "$ref": "http://iglucentral.com/schemas/com.snowplowanalytics.graph/user/jsonschema/1-0-0#"
+            "$ref": "http://iglucentral.com/schemas/com.snowplowanalytics.graph/nodes/application/jsonschema/1-0-0#",
+            "$ref": "http://iglucentral.com/schemas/com.snowplowanalytics.graph/nodes/browser/jsonschema/1-0-0#",
+            "$ref": "http://iglucentral.com/schemas/com.snowplowanalytics.graph/nodes/device/jsonschema/1-0-0#",
+            "$ref": "http://iglucentral.com/schemas/com.snowplowanalytics.graph/nodes/network/jsonschema/1-0-0#",
+            "$ref": "http://iglucentral.com/schemas/com.snowplowanalytics.graph/nodes/page/jsonschema/1-0-0#",
+            "$ref": "http://iglucentral.com/schemas/com.snowplowanalytics.graph/nodes/session/jsonschema/1-0-0#",
+            "$ref": "http://iglucentral.com/schemas/com.snowplowanalytics.graph/nodes/source/jsonschema/1-0-0#",
+            "$ref": "http://iglucentral.com/schemas/com.snowplowanalytics.graph/nodes/user/jsonschema/1-0-0#"
           ]
         },
         "endNode": {
           "description": "The end node for the relationship.",
           "oneOf": [
-            "$ref": "http://iglucentral.com/schemas/com.snowplowanalytics.graph/application/jsonschema/1-0-0#",
-            "$ref": "http://iglucentral.com/schemas/com.snowplowanalytics.graph/browser/jsonschema/1-0-0#",
-            "$ref": "http://iglucentral.com/schemas/com.snowplowanalytics.graph/device/jsonschema/1-0-0#",
-            "$ref": "http://iglucentral.com/schemas/com.snowplowanalytics.graph/network/jsonschema/1-0-0#",
-            "$ref": "http://iglucentral.com/schemas/com.snowplowanalytics.graph/page/jsonschema/1-0-0#",
-            "$ref": "http://iglucentral.com/schemas/com.snowplowanalytics.graph/session/jsonschema/1-0-0#",
-            "$ref": "http://iglucentral.com/schemas/com.snowplowanalytics.graph/source/jsonschema/1-0-0#",
-            "$ref": "http://iglucentral.com/schemas/com.snowplowanalytics.graph/user/jsonschema/1-0-0#"
+            "$ref": "http://iglucentral.com/schemas/com.snowplowanalytics.graph/nodes/application/jsonschema/1-0-0#",
+            "$ref": "http://iglucentral.com/schemas/com.snowplowanalytics.graph/nodes/browser/jsonschema/1-0-0#",
+            "$ref": "http://iglucentral.com/schemas/com.snowplowanalytics.graph/nodes/device/jsonschema/1-0-0#",
+            "$ref": "http://iglucentral.com/schemas/com.snowplowanalytics.graph/nodes/network/jsonschema/1-0-0#",
+            "$ref": "http://iglucentral.com/schemas/com.snowplowanalytics.graph/nodes/page/jsonschema/1-0-0#",
+            "$ref": "http://iglucentral.com/schemas/com.snowplowanalytics.graph/nodes/session/jsonschema/1-0-0#",
+            "$ref": "http://iglucentral.com/schemas/com.snowplowanalytics.graph/nodes/source/jsonschema/1-0-0#",
+            "$ref": "http://iglucentral.com/schemas/com.snowplowanalytics.graph/nodes/user/jsonschema/1-0-0#"
           ]
         }
       }
