@@ -15,11 +15,11 @@
       "properties": {
         "startNode": {
           "description": "The start node for the relationship.",
-          "$ref": "http://iglucentral.com/schemas/com.snowplowanalytics.graph/event/jsonschema/1-0-0#"
+          "$ref": "http://iglucentral.com/schemas/com.snowplowanalytics.graph/nodes/event/jsonschema/1-0-0#"
         },
         "endNode": {
           "description": "The end node for the relationship.",
-          "$ref": "http://iglucentral.com/schemas/com.snowplowanalytics.graph/event/jsonschema/1-0-0#"
+          "$ref": "http://iglucentral.com/schemas/com.snowplowanalytics.graph/nodes/event/jsonschema/1-0-0#"
         }
       }
     }

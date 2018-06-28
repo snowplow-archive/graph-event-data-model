@@ -1,0 +1,62 @@
+{
+  "$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
+  "description": "Schema for a page view event",
+  "self": {
+    "vendor": "com.snowplowanalytics.graph",
+    "name": "page_view",
+    "format": "jsonschema",
+    "version": "1-0-0"
+  },
+
+  "type": "object",
+  "properties": {
+    "nodes": {
+      "description": "All the nodes that constitute the event.",
+      "type": "object",
+      "properties": {
+        "event": {
+          "$ref": "http://iglucentral.com/schemas/com.snowplowanalytics.graph/nodes/event/jsonschema/1-0-0#"
+        },
+        "application": {
+          "$ref": "http://iglucentral.com/schemas/com.snowplowanalytics.graph/nodes/application/jsonschema/1-0-0#"
+        },
+        "browser": {
+          "$ref": "http://iglucentral.com/schemas/com.snowplowanalytics.graph/nodes/browser/jsonschema/1-0-0#"
+        },
+        "device": {
+          "$ref": "http://iglucentral.com/schemas/com.snowplowanalytics.graph/nodes/device/jsonschema/1-0-0#"
+        },
+        "network": {
+          "$ref": "http://iglucentral.com/schemas/com.snowplowanalytics.graph/nodes/network/jsonschema/1-0-0#"
+        },
+        "page": {
+          "$ref": "http://iglucentral.com/schemas/com.snowplowanalytics.graph/nodes/page/jsonschema/1-0-0#"
+        },
+        "session": {
+          "$ref": "http://iglucentral.com/schemas/com.snowplowanalytics.graph/nodes/session/jsonschema/1-0-0#"
+        },
+        "source": {
+          "$ref": "http://iglucentral.com/schemas/com.snowplowanalytics.graph/nodes/source/jsonschema/1-0-0#"
+        },
+        "user": {
+          "$ref": "http://iglucentral.com/schemas/com.snowplowanalytics.graph/nodes/user/jsonschema/1-0-0#"
+        }
+      },
+      "required": ["event", "page"]
+    },
+    "relationships": {
+      "description": "All the relationships between the constituent nodes.",
+      "type": "object",
+      "properties": {
+        "has": {
+          "$ref": "http://iglucentral.com/schemas/com.snowplowanalytics.graph/relationships/has/jsonschema/1-0-0#"
+        },
+        "with": {
+          "$ref": "http://iglucentral.com/schemas/com.snowplowanalytics.graph/relationships/with/jsonschema/1-0-0#"
+        }
+      },
+      "required": ["has"]
+    }
+  },
+  "required": ["nodes", "relationships"]
+}
